@@ -4,7 +4,7 @@
 import java.util.Arrays;
 import java.lang.System.*;
 import java.util.Scanner;
-public class SortEvenArray {
+public class evenArr {
     public static void main(String[] args) {
         System.out.print(Arrays.toString(evenArray(10)));
 
