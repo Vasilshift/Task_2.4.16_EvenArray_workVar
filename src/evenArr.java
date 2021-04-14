@@ -10,19 +10,22 @@ public class evenArr {
 
     }
     public static int[] evenArray(int number) {
-        int[] array = new int[number+1];
-        for(int j = 1; j < array.length; j++){
-            array[j] = j;
-        }
+        //int[] array = new int[number+1];
+//        for(int j = 1; j < array.length; j++){
+//            array[j] = j;
+//        }
 
-        int[] arraysort = new int[number/2];
+        int[] array = new int[number/2];
         int index = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0 && array[i] != 0 ) {
-                arraysort[index] = i;
-                index++;
-            }
+            index = index + 2;
+            array[i] = index;
+
+//            if (array[i] % 2 == 0 && array[i] != 0 ) {
+//                array[index] = i;
+//                index++;
+//            }
         }
-        return arraysort;
+        return array;
     }
 }
